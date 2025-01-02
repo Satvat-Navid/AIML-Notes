@@ -1,4 +1,4 @@
-import cv2 # type: ignore
+import cv2 #type: ignore
 import face_recognition
 
 # Load known face encoding and names
@@ -6,42 +6,41 @@ known_face_encodings = []
 known_face_names = []
 
 #Load known faces and their names.
-known_p1_image = face_recognition.load_image_file("1.png")
-img = cv2.cvtColor(known_p1_image, cv2.COLOR_BGR2RGB)
-# known_p8_image = face_recognition.load_image_file("D:\\MLCODE\\Python\\face_recognition\\rayan.jpg")
-# known_p7_image = face_recognition.load_image_file("D:\\MLCODE\\Python\\face_recognition\\waleed.jpg")
-# known_p2_image = face_recognition.load_image_file("D:\\MLCODE\\Python\\face_recognition\\kaif.jpg")
-# known_p3_image = face_recognition.load_image_file("D:\\MLCODE\\Python\\face_recognition\\tushar.jpg")
-# known_p4_image = face_recognition.load_image_file("D:\\MLCODE\\Python\\face_recognition\\amit.jpg")
-# known_p5_image = face_recognition.load_image_file("D:\\MLCODE\\Python\\face_recognition\\abuzar.jpg")
-# known_p6_image = face_recognition.load_image_file("D:\\MLCODE\\Python\\face_recognition\\shivam.jpg")
+known_p1_image = face_recognition.load_image_file("naveed.jpg")
+known_p8_image = face_recognition.load_image_file("D:\\MLCODE\\Python\\face_recognition\\rayan.jpg")
+known_p7_image = face_recognition.load_image_file("D:\\MLCODE\\Python\\face_recognition\\waleed.jpg")
+known_p2_image = face_recognition.load_image_file("D:\\MLCODE\\Python\\face_recognition\\kaif.jpg")
+known_p3_image = face_recognition.load_image_file("D:\\MLCODE\\Python\\face_recognition\\tushar.jpg")
+known_p4_image = face_recognition.load_image_file("D:\\MLCODE\\Python\\face_recognition\\amit.jpg")
+known_p5_image = face_recognition.load_image_file("D:\\MLCODE\\Python\\face_recognition\\abuzar.jpg")
+known_p6_image = face_recognition.load_image_file("D:\\MLCODE\\Python\\face_recognition\\shivam.jpg")
 
-known_p1_encoding = face_recognition.face_encodings(img)[0]
-# known_p8_encoding = face_recognition.face_encodings(known_p8_image)[0]
-# known_p7_encoding = face_recognition.face_encodings(known_p7_image)[0]
-# known_p2_encoding = face_recognition.face_encodings(known_p2_image)[0]
-# known_p3_encoding = face_recognition.face_encodings(known_p3_image)[0]
-# known_p4_encoding = face_recognition.face_encodings(known_p4_image)[0]
-# known_p5_encoding = face_recognition.face_encodings(known_p5_image)[0]
-# known_p6_encoding = face_recognition.face_encodings(known_p6_image)[0]
+known_p1_encoding = face_recognition.face_encodings(known_p1_image)[0]
+known_p8_encoding = face_recognition.face_encodings(known_p8_image)[0]
+known_p7_encoding = face_recognition.face_encodings(known_p7_image)[0]
+known_p2_encoding = face_recognition.face_encodings(known_p2_image)[0]
+known_p3_encoding = face_recognition.face_encodings(known_p3_image)[0]
+known_p4_encoding = face_recognition.face_encodings(known_p4_image)[0]
+known_p5_encoding = face_recognition.face_encodings(known_p5_image)[0]
+known_p6_encoding = face_recognition.face_encodings(known_p6_image)[0]
 
 known_face_encodings.append(known_p1_encoding)
-# known_face_encodings.append(known_p8_encoding)
-# known_face_encodings.append(known_p7_encoding)
-# known_face_encodings.append(known_p2_encoding)
-# known_face_encodings.append(known_p3_encoding)
-# known_face_encodings.append(known_p4_encoding)
-# known_face_encodings.append(known_p5_encoding)
-# known_face_encodings.append(known_p6_encoding)
+known_face_encodings.append(known_p8_encoding)
+known_face_encodings.append(known_p7_encoding)
+known_face_encodings.append(known_p2_encoding)
+known_face_encodings.append(known_p3_encoding)
+known_face_encodings.append(known_p4_encoding)
+known_face_encodings.append(known_p5_encoding)
+known_face_encodings.append(known_p6_encoding)
 
 known_face_names.append("Naveed")
-# known_face_names.append("Rayan")
-# known_face_names.append("Waleed")
-# known_face_names.append("Kaif")
-# known_face_names.append("Tushar")
-# known_face_names.append("Amit")
-# known_face_names.append("Abuzar")
-# known_face_names.append("Shivam")
+known_face_names.append("Rayan")
+known_face_names.append("Waleed")
+known_face_names.append("Kaif")
+known_face_names.append("Tushar")
+known_face_names.append("Amit")
+known_face_names.append("Abuzar")
+known_face_names.append("Shivam")
 
 # Initialize webcam
 video_capture = cv2.VideoCapture(0) #Real time face recognition

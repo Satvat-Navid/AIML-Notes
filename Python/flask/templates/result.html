@@ -1,0 +1,19 @@
+
+{# This is a comment #}
+
+<HTML
+><h1>
+    This website will show you the score of the form you filled out.
+</h1>
+
+<body>
+    {% for key, value in results.items() %}
+    <h2>{{key}} : {{value}}</h2>
+    {% endfor %}
+    {% if results['score'] >= 50 %}
+    <h2> You have passed the test! </h2>
+    {% else %}
+    <h2> You have failed the test! </h2>
+    {% endif %}
+</body>
+</HTML>
